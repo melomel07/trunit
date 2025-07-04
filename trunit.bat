@@ -6,6 +6,10 @@ set "keyword=playit"
 set "searchDir=%~dp0"
 
 :mainarea
+powershell -NoProfile -Command ^
+  "$size = $Host.UI.RawUI.WindowSize; $buffer = $Host.UI.RawUI.BufferSize; " ^
+  "$buffer.Height = 1000; $buffer.Width = $size.Width; " ^
+  "$Host.UI.RawUI.BufferSize = $Host.UI.RawUI.WindowSize"
 cls
 
 echo                         ______
@@ -19,7 +23,7 @@ echo     \ \  __-   \ \ \_\ \  \ \ \-.  \     \ \ \  \/_/\ \/
 echo      \ \_\ \_\  \ \_____\  \ \_\\"\_\     \ \_\    \ \_\
 echo       \/_/ /_/   \/_____/   \/_/ \/_/      \/_/     \/_/
 echo.
-echo  - To run the server, type "run".
+echo  - Type "run" to run the server.
 echo.
 echo  --------------------------Notes---------------------------
 echo.
@@ -38,6 +42,10 @@ goto mainarea
 pause
 
 :info
+powershell -NoProfile -Command ^
+  "$size = $Host.UI.RawUI.WindowSize; $buffer = $Host.UI.RawUI.BufferSize; " ^
+  "$buffer.Height = 1000; $buffer.Width = $size.Width; " ^
+  "$Host.UI.RawUI.BufferSize = $Host.UI.RawUI.WindowSize"
 cls
 
 echo         TYPE "mainarea" TO GO BACK TO THE MAIN AREA.
@@ -56,6 +64,10 @@ goto mainarea
 pause
 
 :run
+powershell -NoProfile -Command ^
+  "$size = $Host.UI.RawUI.WindowSize; $buffer = $Host.UI.RawUI.BufferSize; " ^
+  "$buffer.Height = 1000; $buffer.Width = $size.Width; " ^
+  "$Host.UI.RawUI.BufferSize = $buffer"
 cls
 
 echo.
