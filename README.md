@@ -2,6 +2,9 @@
 
 A Lightweight program that runs your Terraria server & Python Discord Bot with Style & Ease!
 
+## Preview
+![preview](preview.jpg)
+
 ## How to add Trunit to your server
 
 https://telegra.ph/Trunit-07-04
